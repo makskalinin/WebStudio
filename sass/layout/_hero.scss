@@ -1,0 +1,92 @@
+.hero{
+    padding: 118px 0;
+    background-position: center;
+    background-size: cover; 
+    max-width: 480px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/hero/heroM1x.jpg);
+    background-color: #757575;
+}
+                // dpr2 и 280px+
+@media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
+        .hero{
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ), url(../images/studio/hero/heroM@2x.jpg);
+        }
+    }
+.hero__title{    
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+// tablet
+@media screen and (min-width: 768px){
+    .hero{
+        max-width: 768px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/studio/hero/heroT1x.jpg);
+    }
+}
+            // dpr2 и 768px+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+        .hero{
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/studio/hero/heroT@2x.jpg);
+        }
+    }
+
+// desktop
+@media screen and (min-width: 1200px){
+    .hero{
+        padding: 200px 0;
+        max-width: 1600px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/studio/hero/heroD1x.jpg);
+    }
+    .hero__title{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;                     
+        margin-top: 0;
+    }
+}
+                    // dpr2 и 1200px+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+        .hero{
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/studio/hero/heroD@2x.jpg);
+        }
+    }
